@@ -61,9 +61,6 @@ public class JdbcPetRepositoryImpl implements PetRepository {
 
     private OwnerRepository ownerRepository;
 
-    private VisitRepository visitRepository;
-
-
     @Autowired
     public JdbcPetRepositoryImpl(DataSource dataSource,
     		OwnerRepository ownerRepository,
@@ -75,7 +72,6 @@ public class JdbcPetRepositoryImpl implements PetRepository {
             .usingGeneratedKeyColumns("id");
 
         this.ownerRepository = ownerRepository;
-        this.visitRepository = visitRepository;
     }
 
     @Override

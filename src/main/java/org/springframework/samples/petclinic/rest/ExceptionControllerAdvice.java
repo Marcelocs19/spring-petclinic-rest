@@ -45,12 +45,9 @@ public class ExceptionControllerAdvice {
 	}
 	
 	private class ErrorInfo {
-	    public final String className;
-	    public final String exMessage;
-
 	    public ErrorInfo(Exception ex) {
-	        this.className = ex.getClass().getName();
-	        this.exMessage = ex.getLocalizedMessage();
+	        ex.getClass().getName();
+	        ex.getLocalizedMessage();
 	    }
 	}
 }
