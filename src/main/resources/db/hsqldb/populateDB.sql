@@ -57,7 +57,7 @@ INSERT INTO users(username,password,enabled) VALUES ('admin','admin', true);
 INSERT INTO roles (username, role) VALUES ('admin', 'ROLE_OWNER_ADMIN');
 INSERT INTO roles (username, role) VALUES ('admin', 'ROLE_VET_ADMIN');
 INSERT INTO roles (username, role) VALUES ('admin', 'ROLE_ADMIN');
-INSERT INTO roles (username, role) VALUES ('admin', 'PRODUCT_ADMIN');
+INSERT INTO roles (username, role) VALUES ('admin', 'ROLE_PRODUCT_ADMIN');
 
 INSERT INTO products VALUES (1, 'Golden gato adulto salmao', 'Formulada com ingredientes de alta qualidade e balanceada para suprir as particularidades nutricionais dos felinos.', '1kg');
 INSERT INTO products VALUES (2, 'Frango Sonoro Vinil', 'Brinquedo frango em vinil sonoro. Dimensoes: Altura: 38cm Largura: 10 cm Profundidade: 8 cm', '200g');

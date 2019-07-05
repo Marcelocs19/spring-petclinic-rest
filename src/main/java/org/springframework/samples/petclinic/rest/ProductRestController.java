@@ -43,7 +43,7 @@ public class ProductRestController {
 	@Autowired
 	private ClinicService clinicService;
 
-	@PreAuthorize( "hasRole(@role.PRODUCT_ADMIN)" )
+	@PreAuthorize( "hasRole(@role.OWNER_ADMIN)" )
 	@RequestMapping(value = "", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	public ResponseEntity<Collection<Product>> getProducts() {
 		Collection<Product> products = this.clinicService.findAllProducts();

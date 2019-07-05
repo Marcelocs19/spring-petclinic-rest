@@ -291,9 +291,13 @@ public class ClinicServiceImpl implements ClinicService {
 	}
 
 	@Override
+	@Transactional(readOnly = true)
 	public Collection<Product> findAllProducts() {
 		return productRepository.findAll();
 	}
+
+
+
 	
 	
 
